@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end project</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        min-height: 100vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.02rem;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    img {
+        height: 390px;
+        margin: 0px 6px;
+        border-radius: 23px;
+    }
+    .item {
+        margin: 6px 8px;
+        padding: 12px 16px;
+        border: 1px solid rgb(191, 188, 188);
+        border-radius: 12px;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+    .s-box {
+        height: 240px;
+    }
+    .item p {
+        margin: 16px 0;
+    }
+    .item h4 {
+        margin: 5px 0px;
+        color: rgb(210, 146, 17);
+    }
+    .video-box {
+        color: rgb(57, 52, 8);
+        height: 520px;
+    }
+    .share-button{
+        display: flex;
+        justify-content: flex-end;
+    }
+   .s-box h4{
+        margin-right: auto;
+    }
+    .s-img{
+        margin: 7px 0px;
+        height: 20px;
+    }
+    .s-img:hover{
+        height: 19px;
+        cursor: pointer;
+    }
+    @media screen and (max-width:600px) {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 12px;
+        }
+        .item {
+            padding: 4px 5px;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+        }
+        img {
+            height: 150px;
+            border-radius: 12px;
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        .item p {
+            margin: 2px;
+        }
+        .video-box {
+            height: 250px;
+        }
+        .s-box {
+            height: 150px;
+        }
+        .s-img{
+        margin: 7px 4px;
+        height: 14px;
+    }
+    }
+    @media (min-width:600px) and (max-width: 800px) {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 16px;
+        }
+        .item {
+            padding: 4px 5px;
+            margin: 6px 12px;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            height: 300px;
+            border-radius: 12px;
+            margin-left: 24px;
+        }
+        .s-box {
+            height: 150px;
+            width: 600px;
+        }
+        .video-box {
+            height: 400px;
+            width: 600px;
+        }
+    }
+    @media (min-width:800px) and (max-width: 1022px) {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 16px;
+        }
+        .item {
+            padding: 24px 6px;
+            margin: 6px 12px;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            height: 300px;
+            border-radius: 12px;
+            margin-left: 24px;
+        }
+        .s-box {
+            height: 150px;
+            width: 600px;
+        }
+        .video-box {
+            height: 400px;
+            width: 600px;
+        }
+    }
+    @media (min-width:1022px) and (max-width: 1160px) {
+        .container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 12px;
+        }
+        img {
+            height: 240px;
+            border-radius: 12px;
+        }
+        .s-box {
+            height: 180px;
+            width: 200px;
+        }
+        .video-box {
+            height: 400px;
+        }
+    }
+     @media (min-width:1160px) and (max-width: 1363px) {
+        .container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 16px;
+        }
+        img {
+            height: 280px;
+            border-radius: 12px;
+        }
+        .s-box {
+            height: 200px;
+            width: 300px;
+        }
+        .video-box {
+            height: 435px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item video-box">
+            <div class="head">
+                <img src="spider-man.jpg" alt="">
+                <h4>Sports</h4>
+                <p>Video of Gautam Gambhir Reacting To 'India Will Break' Chant Is Doctored</p>
+                <p>- By Anmol Alphonso | Yesterday</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item s-box">     
+                <div class="share-button">
+                <h4>Decode</h4>
+                <img src="forward.png" class="s-img" alt="">
+                <img src="more.png" class="s-img" alt="">
+                </div>
+                <h3>Cloned Fingerprints Scam: The Story Of Aadhaar Enabled Payment System</h3>
+                <p>The AePS was launched in 2014 by the Indian government to empower...</p>
+                <p> -By Umesh Kumar Ray | 2 Days ago</p>
+            </div>
+            <div class="item s-box">
+                <div class="share-button">
+                <h4>Fact Check</h4>
+                <img src="forward.png" class="s-img" alt="">
+                <img src="more.png" class="s-img" alt="">
+                </div>
+                <h3>AI-Generated Image of Aamir Khan Viral As Lala Amarnath Biopic Look </h3>
+                <p>BOOM found that the image has been generated using Artificial...</p>
+                <p>- By Swasti Chatterjee | 8 Days ago</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item s-box">
+                <div class="share-button">
+                <h4>Sports</h4>
+                <img src="forward.png" class="s-img" alt="">
+                <img src="more.png" class="s-img" alt="">
+                </div>
+                <h3>Asia Cup 2023: Fake Anti-BCCI Quote Falsely Attributed To Sunil...</h3>
+                <p>BOOM found that the quote is fake and Sunil Gavaskar has made no such...</p>
+                <p>- By Anmol Alphonso | 2 Days ago</p>
+            </div>
+            <div class="item s-box">
+                <div class="share-button">
+                <h4>Fast Check</h4>
+                <img src="forward.png" class="s-img" alt="">
+                <img src="more.png" class="s-img" alt="">
+                </div>
+                <h3>Image of Train Decorated With Flowers for Onam Is Fake</h3>
+                <p>BOOM found that the image has been made using generative-AI and is not...</p>
+                <p>- By Hazel Gandhi | 8 Days ago</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
